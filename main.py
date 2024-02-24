@@ -53,7 +53,7 @@ def image_to_ascii(image_path, save_path, scale):
 
     # Save the ASCII art to file
     with open(save_path, 'w') as f:
-        f.write('\n'.join(ascii_art))
+        f.write('\n'.join(ascii_art)) # we use .join because it transforms all the elements in a list into a string, that uses '\n' as a separator
 
 if __name__ == "__main__":
     image_to_ascii("photo.jpg", "photo_ascii.txt", "5")
